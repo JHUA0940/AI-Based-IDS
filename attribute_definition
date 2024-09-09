@@ -1,0 +1,41 @@
+1. duration: The length of the connection in seconds.
+2. protocol_type: The type of protocol used, such as TCP, UDP, or ICMP.
+3. service: The network service on the destination host, e.g., HTTP, FTP, or SSH.
+4. flag: The status of the TCP connection, e.g., SF (successful connection termination) or REJ (connection rejected).
+5. src_bytes: The number of bytes transferred from the source host to the destination host.
+6. dst_bytes: The number of bytes transferred from the destination host to the source host.
+7. land: 1 if the connection is to the same source and destination IP address; otherwise, 0.
+8. wrong_fragment: The number of erroneous packet fragments.
+9. urgent: The number of packets with the urgent flag set.
+10. hot: The number of "hot" indicators, such as system calls or file accesses during the connection.
+11. num_failed_logins: The number of failed login attempts.
+12. logged_in: 1 if the login was successful; otherwise, 0.
+13. num_compromised: The number of compromised conditions, such as exploited vulnerabilities or created backdoors.
+14. root_shell: 1 if root shell access is obtained; otherwise, 0.
+15. su_attempted: 1 if there is an attempt to use the su command to switch to a superuser; otherwise, 0.
+16. num_root: The number of root-level commands executed.
+17. num_file_creations: The number of file creation operations during the connection.
+18. num_shells: The number of shell prompts initiated.
+19. num_access_files: The number of times system files are accessed.
+20. num_outbound_cmds: The number of commands sent to an external system.
+21. is_host_login: 1 if the destination host is in the list of critical hosts; otherwise, 0.
+22. is_guest_login: 1 if the login is as a guest user; otherwise, 0.
+23. count: The number of connections to the same host within the last two seconds.
+24. srv_count: The number of connections to the same service within the last two seconds.
+25. serror_rate: The percentage of connections to the same host that have SYN errors.
+26. srv_serror_rate: The percentage of connections to the same service that have SYN errors.
+27. rerror_rate: The percentage of connections to the same host that have REJ errors.
+28. srv_rerror_rate: The percentage of connections to the same service that have REJ errors.
+29. same_srv_rate: The percentage of connections to the same service.
+30. diff_srv_rate: The percentage of connections to different services.
+31. srv_diff_host_rate: The percentage of connections to different hosts with the same service.
+32. dst_host_count: The total number of connections to the destination host in the last 100 connections.
+33. dst_host_srv_count: The number of connections to the same service on the destination host in the last 100 connections.
+34. dst_host_same_srv_rate: The percentage of connections to the same service on the destination host in the last 100 connections.
+35. dst_host_diff_srv_rate: The percentage of connections to different services on the destination host in the last 100 connections.
+36. dst_host_same_src_port_rate: The percentage of connections with the same source port to the destination host in the last 100 connections.
+37. dst_host_srv_diff_host_rate: The percentage of connections to the same service but different hosts within the last 100 connections.
+38. dst_host_serror_rate: The percentage of SYN errors in the last 100 connections to the destination host.
+39. dst_host_srv_serror_rate: The percentage of SYN errors in the last 100 connections to the same service on the destination host.
+40. dst_host_rerror_rate: The percentage of REJ errors in the last 100 connections to the destination host.
+41. dst_host_srv_rerror_rate: The percentage of REJ errors in the last 100 connections to the same service on the destination host.

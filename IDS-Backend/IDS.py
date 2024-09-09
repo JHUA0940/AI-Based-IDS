@@ -35,13 +35,19 @@ protocol_type_mapping = {
     1: 'icmp'
 }
 
-# TCP flags to match the @attribute 'flag' list
+# Updated TCP flags mapping to new attribute set
 flag_mapping = {
-    'S': 'SF',  # SYN flag set, similar to "SF"
-    'R': 'REJ',  # RST flag set, maps to "REJ"
-    'F': 'S0',  # No SYN but FIN or RST, used as an example
-    'P': 'SH',  # SYN+FIN flag, "SH" (used as an example for simplification)
-    # Add more mappings as needed
+    'S': 'S0',      # SYN flag, connection started but no SYN-ACK seen
+    'SA': 'S1',     # SYN-ACK, connection established
+    'SF': 'SF',     # SYN followed by FIN/ACK, session fully established and closed
+    'REJ': 'REJ',   # RST flag, connection rejected
+    'RSTO': 'RSTO', # RST-ACK, connection reset after transmission
+    'RSTOS0': 'RSTOS0',  # Reset before connection established
+    'RSTR': 'RSTR', # Client reset the connection
+    'S2': 'S2',     # Mid-connection (data transmission ongoing)
+    'S3': 'S3',     # Connection finished with normal teardown
+    'SH': 'SH',     # SYN + FIN without data transmission
+    'default': 'OTH'
 }
 
 # Store connection and packet info for calculating fields
@@ -52,6 +58,33 @@ connection_info = defaultdict(
 # Store destination host metrics (dst_host_* fields)
 dst_host_info = defaultdict(
     lambda: {'count': 0, 'srv_count': 0, 'serror_count': 0, 'rerror_count': 0})
+
+
+# Function to determine the appropriate flag for a TCP packet
+def get_flag(packet):
+    if TCP in packet:
+        flags = packet[TCP].flags  # Extract the TCP flags as a bitmask
+
+        # Check flag combinations and assign the correct value
+        if flags == 0x02:  # SYN only
+            return flag_mapping['S']
+        elif flags == 0x12:  # SYN + ACK
+            return flag_mapping['SA']
+        elif flags == 0x10:  # ACK only
+            return 'S1'  # Manually added 'S1' to handle connection established state
+        elif flags == 0x14:  # RST + ACK
+            return flag_mapping['RSTO']
+        elif flags == 0x04:  # RST only
+            return flag_mapping['REJ']
+        elif flags == 0x01:  # FIN only
+            return flag_mapping['SF']
+        elif flags == 0x11:  # FIN + ACK
+            return flag_mapping['SF']
+        elif flags == 0x18:  # PSH + ACK
+            return flag_mapping['S2']  # Mid-connection (data transmission ongoing)
+        else:
+            return flag_mapping.get('default')  # Default to 'OTH'
+    return 'OTH'
 
 
 # Function to process each packet and immediately print the results
@@ -65,8 +98,7 @@ def process_packet(packet):
             sport = packet[TCP].sport
             dport = packet[TCP].dport
             service = service_mapping.get(dport, "private")  # Map the destination port to a service
-            flags = packet[TCP].sprintf("%TCP.flags%")  # Extract the TCP flags
-            flag = flag_mapping.get(flags, "OTH")  # Map flags to appropriate value
+            flag = get_flag(packet)  # Use the get_flag function to map TCP flags
             connection_key = (packet[IP].src, packet[IP].dst, dport)
         elif protocol_type == "udp" and UDP in packet:
             sport = packet[UDP].sport
