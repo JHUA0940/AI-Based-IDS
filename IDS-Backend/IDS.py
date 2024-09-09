@@ -8,6 +8,32 @@ from collections import defaultdict
 from sklearn.exceptions import NotFittedError
 import socket
 from datetime import datetime
+import netifaces
+
+# Function to get the IP address of the default network interface
+def get_interface_ip():
+    """
+    Returns the actual IP address of the network interface by creating
+    a dummy socket connection.
+    """
+    try:
+        # Create a dummy socket connection to an external address to get the IP
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        # Use Google's public DNS server to get an external connection (no actual connection made)
+        s.connect(('8.8.8.8', 80))
+        ip_address = s.getsockname()[0]
+        s.close()
+        return ip_address
+    except Exception as e:
+        print(f"Error getting interface IP: {e}")
+        return None
+
+# Get the IP address of the network interface
+interface_ip = get_interface_ip()
+print('interface ip: '+interface_ip)
+if not interface_ip:
+    print("Could not determine interface IP.")
+    exit(1)
 
 # Set the path relative to the script's directory
 path = os.path.dirname(os.path.abspath(__file__))
@@ -57,9 +83,6 @@ flag_mapping = {
 abnormal_counter = 0
 ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
 
-# Get the local IP address
-local_ip = socket.gethostbyname(socket.gethostname())
-
 # Time tracking for normal traffic reminders
 last_normal_traffic_time = time.time()
 
@@ -99,7 +122,7 @@ def process_packet(packet):
     global abnormal_counter, last_normal_traffic_time
 
     # Skip packets from the local IP address
-    if IP in packet and packet[IP].src == local_ip:
+    if IP in packet and packet[IP].src == interface_ip:
         return
 
     # Initialize all the fields to default values (zeros) to ensure 14 features
