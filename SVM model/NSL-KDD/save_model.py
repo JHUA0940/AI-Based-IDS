@@ -1,17 +1,8 @@
 import numpy as np
 import pandas as pd
-from collections import Counter
-import matplotlib.pyplot as plt
 from sklearn import svm
-from sklearn.svm import SVC
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
-import seaborn as sns
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import GridSearchCV
-import matplotlib.gridspec as gridspec
-import joblib  # For saving and loading the model
 import pickle
 
 # Load the data
@@ -33,57 +24,47 @@ data_Train.columns = columns
 data_Train.drop(columns='outcome', axis=1, inplace=True)
 
 # Convert the 'attack' column into 'normal' and 'attack' categories
-attack_n = []
-for i in data_Train.attack:
-    if i == 'normal':
-        attack_n.append("normal")
-    else:
-        attack_n.append("attack")
-data_Train['attack'] = attack_n
+data_Train['attack'] = data_Train['attack'].apply(lambda x: 0 if x == 'normal' else 1)
 
 # Encode categorical variables 'protocol_type', 'service', and 'flag'
 protocol_type_le = LabelEncoder()
 service_le = LabelEncoder()
 flag_le = LabelEncoder()
+
 data_Train['protocol_type'] = protocol_type_le.fit_transform(data_Train['protocol_type'])
 data_Train['service'] = service_le.fit_transform(data_Train['service'])
 data_Train['flag'] = flag_le.fit_transform(data_Train['flag'])
 
-# Convert the 'attack' column to binary labels (0 for 'normal', 1 for 'attack')
-attack_n = []
-for i in data_Train.attack:
-    if i == 'normal':
-        attack_n.append(0)
-    else:
-        attack_n.append(1)
-data_Train['attack'] = attack_n
-
 # Split the dataset into features (x) and target (y)
-y = data_Train['attack'].copy()  # Target variable
+y = data_Train['attack']  # Target variable
 x = data_Train.drop(['attack'], axis=1)  # Feature set
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=40)
 
 # Standardize the data
-from sklearn.preprocessing import StandardScaler
 scalar = StandardScaler()
 x_train = scalar.fit_transform(x_train)
 x_test = scalar.transform(x_test)
 
 # Train a linear SVM model
-lin_svc = svm.LinearSVC().fit(x_train, y_train)
+lin_svc = svm.LinearSVC(max_iter=10000).fit(x_train, y_train)
 
-with open('model.pkl', 'wb') as file:
-    pickle.dump(lin_svc, file)
+# Save the trained model, encoders, and scaler
+with open('model.pkl', 'wb') as model_file:
+    pickle.dump(lin_svc, model_file)
 
-with open('model.pkl', 'rb') as file:
-    loaded_model = pickle.load(file)
+with open('scalar.pkl', 'wb') as scalar_file:
+    pickle.dump(scalar, scalar_file)
 
+with open('protocol_type_le.pkl', 'wb') as proto_file:
+    pickle.dump(protocol_type_le, proto_file)
 
-# Use the loaded model to make predictions on the test set
-Y_pred = loaded_model.predict(x_test)
+with open('service_le.pkl', 'wb') as service_file:
+    pickle.dump(service_le, service_file)
 
-# Print model performance
-print('The Training accuracy = ', loaded_model.score(x_train, y_train))
-print('The Testing accuracy = ', loaded_model.score(x_test, y_test))
-print("------------------------------------------------")
-print("linearSVC accuracy : " + str(np.round(accuracy_score(y_test, Y_pred), 3)))
+with open('flag_le.pkl', 'wb') as flag_file:
+    pickle.dump(flag_le, flag_file)
+
+# Evaluate the model
+y_pred = lin_svc.predict(x_test)
+print(f"Training accuracy: {lin_svc.score(x_train, y_train):.3f}")
+print(f"Testing accuracy: {lin_svc.score(x_test, y_test):.3f}")

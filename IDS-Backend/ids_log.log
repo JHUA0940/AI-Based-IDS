@@ -1,0 +1,1142 @@
+2024-09-10 00:02:47,050 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:47,050 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:02:48,450 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:48,450 - WARNING - Source IP: 40.99.130.98, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 58784
+2024-09-10 00:02:48,507 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:48,507 - WARNING - Source IP: 40.99.130.98, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 58784
+2024-09-10 00:02:49,141 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:49,142 - WARNING - Source IP: 142.250.70.238, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 64591
+2024-09-10 00:02:50,874 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:50,874 - WARNING - Source IP: 184.86.223.49, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52890
+2024-09-10 00:02:51,641 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:51,641 - WARNING - Source IP: 20.122.63.128, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52910
+2024-09-10 00:02:53,257 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:53,258 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:02:54,318 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:54,319 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 61744
+2024-09-10 00:02:54,459 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:54,459 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:02:54,652 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:54,652 - WARNING - Source IP: 117.18.232.200, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52913
+2024-09-10 00:02:54,835 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:54,835 - WARNING - Source IP: 20.43.132.134, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52915
+2024-09-10 00:02:55,283 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:55,284 - WARNING - Source IP: 117.18.232.200, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52916
+2024-09-10 00:02:55,693 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:55,693 - WARNING - Source IP: 13.107.246.32, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52917
+2024-09-10 00:02:55,973 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:55,974 - WARNING - Source IP: 103.126.92.60, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52900
+2024-09-10 00:02:57,012 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:57,012 - WARNING - Source IP: 20.37.198.118, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52920
+2024-09-10 00:02:57,644 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:57,645 - WARNING - Source IP: 20.122.63.128, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52921
+2024-09-10 00:02:59,420 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:02:59,421 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:00,018 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:00,018 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:00,771 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:00,771 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 61744
+2024-09-10 00:03:01,043 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:01,043 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 47134
+2024-09-10 00:03:01,128 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:01,128 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 57979
+2024-09-10 00:03:01,413 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:01,413 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:02,990 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:02,990 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:03,120 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:03,120 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:03,331 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:03,331 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:03,457 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:03,458 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:03,805 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:03,805 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:03,995 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:03,995 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,146 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,146 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,249 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,249 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,347 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,348 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,469 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,469 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,579 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,579 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:04,669 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:04,669 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:05,547 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:05,547 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:05,634 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:05,634 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:06,553 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:06,553 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:03:08,288 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,288 - WARNING - Source IP: 23.194.133.245, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58374
+2024-09-10 00:03:08,473 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,473 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:08,528 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,528 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:08,590 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,590 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:08,682 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,682 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52924
+2024-09-10 00:03:08,747 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,747 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 65055
+2024-09-10 00:03:08,834 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,834 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:08,934 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:08,935 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 51973
+2024-09-10 00:03:09,396 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:09,396 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:09,461 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:09,461 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:09,514 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:09,515 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:09,935 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:09,936 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,003 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,004 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,052 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,053 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,098 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,099 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,142 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,142 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,205 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,205 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,247 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,247 - WARNING - Source IP: 23.53.241.11, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52925
+2024-09-10 00:03:10,536 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:10,536 - WARNING - Source IP: 23.194.133.245, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58374
+2024-09-10 00:03:11,226 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,226 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:11,385 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,385 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:11,570 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,571 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:11,729 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,729 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:11,819 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,819 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:11,908 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:11,908 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:12,085 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,085 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:12,129 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,129 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:12,175 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,175 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:12,227 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,227 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:12,294 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,294 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:12,375 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:12,375 - WARNING - Source IP: 13.107.21.239, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52898
+2024-09-10 00:03:15,701 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:15,701 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:22,779 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:22,779 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:22,947 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:22,948 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:23,075 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,075 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:23,160 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,161 - WARNING - Source IP: 20.42.65.93, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52883
+2024-09-10 00:03:23,237 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,237 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:23,323 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,323 - WARNING - Source IP: 52.231.230.148, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52882
+2024-09-10 00:03:23,455 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,456 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52887
+2024-09-10 00:03:23,591 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,591 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:23,855 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:23,855 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:24,061 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,061 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:24,161 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,161 - WARNING - Source IP: 172.64.41.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50352
+2024-09-10 00:03:24,224 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,224 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:24,283 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,283 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:24,341 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,341 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:24,395 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,395 - WARNING - Source IP: 20.42.65.93, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52883
+2024-09-10 00:03:24,469 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,469 - WARNING - Source IP: 20.42.65.93, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52883
+2024-09-10 00:03:24,581 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:24,581 - WARNING - Source IP: 20.42.65.93, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52883
+2024-09-10 00:03:25,058 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,058 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,130 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,130 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,222 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,222 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,283 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,283 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,356 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,356 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,421 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,421 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:25,509 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,509 - WARNING - Source IP: 103.129.252.75, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52928
+2024-09-10 00:03:25,599 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:25,600 - WARNING - Source IP: 103.129.252.98, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52936
+2024-09-10 00:03:26,052 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:26,052 - WARNING - Source IP: 172.253.118.109, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52934
+2024-09-10 00:03:26,285 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:26,285 - WARNING - Source IP: 103.129.252.75, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52935
+2024-09-10 00:03:26,743 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:26,743 - WARNING - Source IP: 173.194.141.71, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58889
+2024-09-10 00:03:26,927 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:26,927 - WARNING - Source IP: 173.194.141.71, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52937
+2024-09-10 00:03:27,065 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,065 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:27,169 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,169 - WARNING - Source IP: 173.194.141.71, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58889
+2024-09-10 00:03:27,285 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,285 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:27,370 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,373 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59166
+2024-09-10 00:03:27,455 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,455 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:27,529 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,529 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:27,598 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,598 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:27,658 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,659 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:27,725 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,725 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:27,788 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,788 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:27,852 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:27,852 - WARNING - Source IP: 103.126.92.60, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52940
+2024-09-10 00:03:28,034 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,034 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:28,143 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,143 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:28,210 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,210 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 61744
+2024-09-10 00:03:28,308 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,308 - WARNING - Source IP: 142.250.70.225, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 60904
+2024-09-10 00:03:28,419 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,420 - WARNING - Source IP: 142.250.70.198, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 64963
+2024-09-10 00:03:28,567 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,567 - WARNING - Source IP: 142.250.70.142, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 64998
+2024-09-10 00:03:28,659 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,659 - WARNING - Source IP: 142.250.70.198, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 64963
+2024-09-10 00:03:28,738 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,738 - WARNING - Source IP: 172.253.118.109, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52934
+2024-09-10 00:03:28,833 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,833 - WARNING - Source IP: 172.253.118.109, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52934
+2024-09-10 00:03:28,908 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:28,908 - WARNING - Source IP: 103.129.252.75, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52942
+2024-09-10 00:03:29,070 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:29,070 - WARNING - Source IP: 103.129.252.75, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52942
+2024-09-10 00:03:29,169 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:29,169 - WARNING - Source IP: 111.124.203.34, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52944
+2024-09-10 00:03:29,556 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:29,556 - WARNING - Source IP: 111.124.203.34, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52944
+2024-09-10 00:03:29,652 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:29,652 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:29,881 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:29,881 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:30,026 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:30,026 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:30,179 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:30,179 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:30,977 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:30,977 - WARNING - Source IP: 172.253.118.109, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52934
+2024-09-10 00:03:31,195 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,195 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,325 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,325 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,398 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,398 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,455 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,455 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,514 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,514 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,569 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,569 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,630 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,630 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,702 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,702 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50238
+2024-09-10 00:03:31,764 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,764 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:31,997 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:31,997 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 51086
+2024-09-10 00:03:32,262 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,262 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:32,454 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,454 - WARNING - Source IP: 23.42.227.112, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59178
+2024-09-10 00:03:32,555 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,555 - WARNING - Source IP: 17.8.156.52, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59180
+2024-09-10 00:03:32,653 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,653 - WARNING - Source IP: 17.8.152.174, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59174
+2024-09-10 00:03:32,803 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,803 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:32,914 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:32,920 - WARNING - Source IP: 17.156.128.10, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59177
+2024-09-10 00:03:33,009 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,010 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59186
+2024-09-10 00:03:33,075 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,076 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49787
+2024-09-10 00:03:33,156 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,156 - WARNING - Source IP: 17.248.219.66, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59184
+2024-09-10 00:03:33,218 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,218 - WARNING - Source IP: 17.8.152.174, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59174
+2024-09-10 00:03:33,346 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,346 - WARNING - Source IP: 184.86.223.177, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59188
+2024-09-10 00:03:33,557 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,557 - WARNING - Source IP: 17.8.152.174, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59174
+2024-09-10 00:03:33,730 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,730 - WARNING - Source IP: 184.86.223.177, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59188
+2024-09-10 00:03:33,797 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,798 - WARNING - Source IP: 184.86.223.177, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59188
+2024-09-10 00:03:33,887 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,888 - WARNING - Source IP: 184.86.223.177, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59188
+2024-09-10 00:03:33,984 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:33,984 - WARNING - Source IP: 17.57.145.41, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 57982
+2024-09-10 00:03:34,055 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,055 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,130 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,130 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,195 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,195 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,258 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,258 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,368 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,368 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,431 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,431 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:34,541 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,541 - WARNING - Source IP: 1.1.1.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59164
+2024-09-10 00:03:34,629 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,629 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:34,698 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,698 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:34,782 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,782 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:34,889 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,890 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:34,989 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:34,989 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:35,059 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,059 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:35,127 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,127 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:35,187 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,187 - WARNING - Source IP: 184.86.223.177, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59188
+2024-09-10 00:03:35,247 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,247 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:35,308 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,308 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,366 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,366 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,434 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,434 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,520 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,520 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,589 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,589 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,663 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,663 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,722 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,722 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,784 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,784 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,839 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,839 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,904 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,904 - WARNING - Source IP: 184.86.223.144, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59190
+2024-09-10 00:03:35,973 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:35,974 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:36,029 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,029 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:36,097 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,097 - WARNING - Source IP: 23.194.132.147, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59192
+2024-09-10 00:03:36,165 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,165 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:36,299 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,299 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:36,378 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,378 - WARNING - Source IP: 151.101.3.6, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 58294
+2024-09-10 00:03:36,469 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,469 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:36,594 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,594 - WARNING - Source IP: 204.79.197.203, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52884
+2024-09-10 00:03:36,660 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,660 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 51973
+2024-09-10 00:03:36,721 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:36,721 - WARNING - Source IP: 17.156.128.10, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59193
+2024-09-10 00:03:37,125 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:37,125 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:37,186 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:37,186 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:37,252 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:37,252 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52640
+2024-09-10 00:03:37,310 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:37,311 - WARNING - Source IP: 23.194.133.234, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59189
+2024-09-10 00:03:38,174 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,174 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,251 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,251 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,492 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,493 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,550 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,550 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,612 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,612 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,683 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,683 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,729 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,729 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:38,783 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:38,783 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,138 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,138 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,226 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,226 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,288 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,288 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,340 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,340 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,394 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,396 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,482 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,482 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,544 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,545 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,603 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,603 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 55885
+2024-09-10 00:03:39,660 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:39,660 - WARNING - Source IP: 23.194.132.147, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59194
+2024-09-10 00:03:41,291 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:41,291 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:41,749 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:41,749 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:42,131 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:42,132 - WARNING - Source IP: 23.194.132.147, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59195
+2024-09-10 00:03:42,229 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:42,230 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:42,305 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:42,305 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:42,371 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:42,371 - WARNING - Source IP: 23.194.132.147, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59195
+2024-09-10 00:03:43,011 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:43,011 - WARNING - Source IP: 184.86.223.48, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 62595
+2024-09-10 00:03:44,864 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:44,865 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:44,988 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:44,988 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:45,284 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,284 - WARNING - Source IP: 203.219.219.141, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 63337
+2024-09-10 00:03:45,417 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,417 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:45,507 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,507 - WARNING - Source IP: 20.122.63.128, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52954
+2024-09-10 00:03:45,612 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,613 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:45,710 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,710 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:45,800 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,801 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:45,901 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,901 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:45,988 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:45,988 - WARNING - Source IP: 203.219.219.141, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 63337
+2024-09-10 00:03:46,309 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:46,309 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:46,588 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:46,589 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:46,695 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:46,695 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:46,789 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:46,789 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:46,924 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:46,924 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:47,050 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:47,050 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:47,167 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:47,167 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 61744
+2024-09-10 00:03:47,253 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:47,253 - WARNING - Source IP: 35.190.80.1, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 63436
+2024-09-10 00:03:47,349 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:47,350 - WARNING - Source IP: 35.190.80.1, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52957
+2024-09-10 00:03:47,564 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:47,565 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:48,949 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:48,949 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,021 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,021 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,085 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,086 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,137 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,137 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,191 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,191 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,246 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,246 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,301 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,301 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,689 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,690 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,754 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,754 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,815 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,815 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:49,962 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:49,963 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:50,041 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,041 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:50,105 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,105 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:50,204 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,204 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:50,297 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,298 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:50,418 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,418 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:50,507 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,507 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:50,669 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,669 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:50,939 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:50,939 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:51,248 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,248 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:51,368 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,368 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:51,466 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,466 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:51,546 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,546 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:51,644 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,644 - WARNING - Source IP: 202.7.223.206, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56735
+2024-09-10 00:03:51,833 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,833 - WARNING - Source IP: 142.250.70.194, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 54171
+2024-09-10 00:03:51,901 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,901 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:51,971 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:51,972 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:03:52,180 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:52,180 - WARNING - Source IP: 74.125.109.41, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 50904
+2024-09-10 00:03:52,304 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:52,304 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:52,380 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:52,380 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:52,455 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:52,455 - WARNING - Source IP: 142.250.70.182, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 49842
+2024-09-10 00:03:53,594 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:53,595 - WARNING - Source IP: 142.250.70.174, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 52383
+2024-09-10 00:03:53,949 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:53,950 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 56512
+2024-09-10 00:03:54,512 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:03:54,513 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:00,572 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:00,572 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:01,925 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:01,926 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:02,756 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:02,756 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 61744
+2024-09-10 00:04:02,860 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:02,860 - WARNING - Source IP: 3.163.44.116, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 54094
+2024-09-10 00:04:03,438 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:03,439 - WARNING - Source IP: 3.163.44.116, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 54094
+2024-09-10 00:04:06,485 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:06,485 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:06,541 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:06,541 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:10,194 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:10,195 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52797
+2024-09-10 00:04:11,069 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:11,069 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:11,359 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:11,359 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:11,634 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:11,634 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:12,023 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:12,023 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:12,438 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:12,438 - WARNING - Source IP: 173.194.141.71, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52938
+2024-09-10 00:04:12,597 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:12,597 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:12,924 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:12,924 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:13,241 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,241 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:13,477 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,478 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:13,532 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,532 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:13,586 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,586 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:13,724 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,725 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:13,880 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:13,880 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,036 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,036 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,215 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,215 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,376 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,376 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,546 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,546 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,721 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,721 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:14,922 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:14,922 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,164 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,164 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,277 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,278 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,390 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,390 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,548 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,549 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,713 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,713 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:15,918 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:15,918 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:16,238 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:16,238 - WARNING - Source IP: 13.107.21.239, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52904
+2024-09-10 00:04:16,329 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:16,329 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:16,464 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:16,464 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:16,621 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:16,621 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:16,886 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:16,886 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,034 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,034 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,204 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,204 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,356 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,356 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,526 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,526 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,686 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,686 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,844 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,844 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:17,917 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,917 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:17,997 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:17,998 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,126 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,126 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:18,195 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,195 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,353 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,353 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,462 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,462 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,583 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,583 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,711 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,711 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,834 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,834 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:18,947 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:18,947 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,069 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,070 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,167 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,168 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,240 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,240 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,321 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,321 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,462 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,463 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,566 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,566 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,663 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,663 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,787 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,787 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,848 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,848 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:19,964 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:19,964 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,043 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,043 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,118 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,118 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,187 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,187 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,259 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,259 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,331 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,331 - WARNING - Source IP: 23.53.241.26, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 65277
+2024-09-10 00:04:20,404 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,405 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,479 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,479 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,572 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,572 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,640 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,640 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,724 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,724 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,799 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,800 - WARNING - Source IP: 142.250.70.170, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 59990
+2024-09-10 00:04:20,882 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,882 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:20,951 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:20,951 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,024 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,024 - WARNING - Source IP: 142.250.70.170, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59197
+2024-09-10 00:04:21,116 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,116 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,259 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,259 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,336 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,336 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,409 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,410 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,475 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,475 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,537 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,537 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,609 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,609 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,681 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,681 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,751 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,751 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,824 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,825 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,895 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,895 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:21,968 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:21,969 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,025 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,026 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,082 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,082 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,154 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,154 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,224 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,224 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,299 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,299 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,365 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,365 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,430 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,430 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,496 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,496 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,556 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,556 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,623 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,623 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,705 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,705 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,769 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,770 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,845 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,845 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,920 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,920 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:22,988 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:22,988 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,062 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,063 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,124 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,124 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,205 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,205 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,294 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,294 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,413 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,414 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,504 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,504 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,564 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,564 - WARNING - Source IP: 43.156.222.165, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 51434
+2024-09-10 00:04:23,729 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,730 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,817 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,817 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,904 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,904 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:23,981 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:23,982 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,065 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,065 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,137 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,137 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,217 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,217 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,291 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,291 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,363 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,364 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,427 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,428 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,513 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,513 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,602 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,602 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,668 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,668 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,745 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,745 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:24,833 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,834 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:24,945 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:24,946 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,027 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,027 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,106 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,106 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,176 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,176 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,252 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,253 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,319 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,319 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,390 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,390 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,477 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,478 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,559 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,560 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,658 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,658 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,729 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,729 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,816 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,817 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,907 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,907 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:25,990 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:25,991 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,073 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,073 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,158 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,158 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,231 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,231 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,303 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,303 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,377 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,378 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,455 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,455 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,516 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,516 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,583 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,583 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,656 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,656 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,720 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,720 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,796 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,796 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,868 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,868 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:26,949 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:26,949 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,021 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,022 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,088 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,088 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,161 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,162 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,243 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,243 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,310 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,310 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,390 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,390 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,460 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,460 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,535 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,536 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,594 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,594 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,663 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,663 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,727 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,727 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,786 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,787 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:27,925 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:27,925 - WARNING - Source IP: 103.126.92.60, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52943
+2024-09-10 00:04:28,137 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,137 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,196 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,196 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,255 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,255 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,340 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,341 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,444 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,444 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,512 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,512 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,588 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,588 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,667 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,667 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,745 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,745 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,808 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,808 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,874 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,875 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:28,936 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:28,936 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,001 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,001 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,079 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,079 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,163 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,163 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,253 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,253 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,348 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,348 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,437 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,437 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,523 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,523 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,606 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,607 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,693 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,693 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,770 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,770 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,850 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,850 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:29,932 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:29,933 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,014 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,014 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,081 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,082 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,144 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,145 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,221 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,221 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,285 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,285 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,356 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,356 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,427 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,427 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,488 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,489 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,551 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,551 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,630 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,630 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,695 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,695 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,764 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,764 - WARNING - Source IP: 4.153.25.230, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59170
+2024-09-10 00:04:30,834 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,835 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,899 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,899 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:30,971 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:30,971 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,043 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,043 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,108 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,109 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,179 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,179 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,241 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,242 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,313 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,313 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,378 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,378 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,444 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,444 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,507 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,507 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,573 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,573 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:31,653 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,653 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,718 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,718 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,777 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,778 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,849 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,849 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:31,908 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,908 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:31,979 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:31,979 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,036 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,036 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,105 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,106 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,164 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,164 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,227 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,227 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,303 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,303 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,372 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,372 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,444 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,444 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,521 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,521 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,588 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,589 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,658 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,658 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,733 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,733 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,800 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,800 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,872 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,872 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:32,945 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:32,945 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,015 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,015 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,076 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,076 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,151 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,151 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,226 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,226 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,299 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,299 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,371 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,371 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,446 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,446 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,521 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,521 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,585 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,585 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,651 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,652 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,713 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,713 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,782 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,782 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,852 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,852 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,916 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,916 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:33,983 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:33,983 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,046 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,046 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,107 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,107 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,169 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,169 - WARNING - Source IP: 23.194.132.147, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 59199
+2024-09-10 00:04:34,236 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,236 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,351 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,352 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,414 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,414 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,484 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,484 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,552 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,552 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,617 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,617 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,684 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,684 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,752 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,753 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,816 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,817 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,882 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,898 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:34,962 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:34,963 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,035 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,036 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,106 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,106 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,173 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,173 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,240 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,240 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,310 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,311 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,379 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,379 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,447 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,447 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,513 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,513 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,588 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,588 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,653 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,653 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,720 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,720 - WARNING - Source IP: 103.129.252.98, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52941
+2024-09-10 00:04:35,781 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,781 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,841 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,842 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,894 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,894 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:35,958 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:35,958 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,018 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,018 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,088 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,088 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,160 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,160 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,231 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,232 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,305 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,306 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,368 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,368 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,426 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,426 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,500 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,500 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,576 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,577 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:36,653 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,654 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,709 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,709 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,756 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,756 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
+2024-09-10 00:04:36,797 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,797 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,842 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,842 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:36,889 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:36,890 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:38,423 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:38,423 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:38,715 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:38,715 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52795
+2024-09-10 00:04:39,050 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:39,050 - WARNING - Source IP: 104.18.32.47, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52797
+2024-09-10 00:04:39,717 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:39,717 - WARNING - Source IP: 162.159.61.3, Destination IP: 192.168.1.125, Protocol: udp, Service: private, Port: 62250
+2024-09-10 00:04:40,364 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:40,364 - WARNING - Source IP: 3.233.158.25, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52960
+2024-09-10 00:04:43,684 - WARNING - Abnormal traffic detected! Threshold met.
+2024-09-10 00:04:43,684 - WARNING - Source IP: 52.168.117.175, Destination IP: 192.168.1.125, Protocol: tcp, Service: private, Port: 52365
