@@ -27,8 +27,7 @@ The IDS system is trained on network traffic datasets and continuously improves 
   - `numpy`
   - `pandas`
   - `matplotlib`
-  - `tensorflow` (optional, for deep learning models)
-- Network traffic datasets (e.g., CICIDS 2017, KDD Cup 99)
+
 
 ## Installation
 
