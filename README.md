@@ -3,9 +3,10 @@
 ## Overview
 
 Owner:
-Jiasheng Huang
 
-Shiyu Zhu
+- Jiasheng Huang
+
+- Shiyu Zhu
 
 ## Overview
 
