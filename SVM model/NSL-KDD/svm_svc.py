@@ -12,13 +12,13 @@ from sklearn import svm
 from sklearn.svm import SVC
 # SVC is a support vector classifier
 from sklearn.preprocessing import MinMaxScaler
-# To standardize data processing
+# Standardize data processing
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-# Evaluate model performance parameters
+# Evaluate model performance metrics
 from sklearn.model_selection import train_test_split
 # Dataset partitioning
 import seaborn as sns
-# Provide visualized results
+# Provide visualization capabilities
 from sklearn.preprocessing import LabelEncoder
 # Encode categorical data
 from sklearn.model_selection import GridSearchCV
@@ -37,25 +37,25 @@ columns = (
  'dst_host_srv_rerror_rate', 'attack', 'outcome'])
 data_Train.columns = columns
 data_Train.isnull().sum()
-# Drop the 'outcome' column from the data_Train dataset
+# Delete the 'outcome' column from the data_Train dataset
 data_Train.drop(columns='outcome', axis=1, inplace=True)
 
 attack_n = []
 for i in data_Train.attack:
-    # Convert attack types into standardized strings
+    # Convert attack types to standardized strings
     if i == 'normal':
         attack_n.append("normal")
     else:
         attack_n.append("attack")
-# Assign the converted attack types list back to the corresponding column in the original dataset
+# Assign the converted attack type list back to the corresponding column in the original dataset
 data_Train['attack'] = attack_n
 
-# Select all columns in the dataset that are of type 'object' and return their column names
+# Select all columns in the dataset that are of type 'object' and return their names
 data_obj = data_Train.select_dtypes(['object']).columns
-# Count and return the occurrences of each label in the "attack" column of the training dataset
+# Calculate and return the count of occurrences of each label in the "attack" column of the training dataset
 data_Train["attack"].value_counts()
 
-# LabelEncoder is used to convert categorical label data into numerical data for machine learning models to process
+# LabelEncoder is used to convert categorical label data into numerical format, which is easier for machine learning models to process
 from sklearn.preprocessing import LabelEncoder
 
 # Initialize a LabelEncoder instance for handling the protocol_type field
@@ -65,16 +65,16 @@ service_le = LabelEncoder()
 # Initialize a LabelEncoder instance for handling the flag field
 flag_le = LabelEncoder()
 
-# 1. Use LabelEncoder to encode the 'protocol_type' feature
+# 1. Encode the 'protocol_type' feature using LabelEncoder
 data_Train['protocol_type'] = protocol_type_le.fit_transform(data_Train['protocol_type'])
-# 2. Use LabelEncoder to encode the 'service' feature
+# 2. Encode the 'service' feature using LabelEncoder
 data_Train['service'] = service_le.fit_transform(data_Train['service'])
-# 3. Use LabelEncoder to encode the 'flag' feature
+# 3. Encode the 'flag' feature using LabelEncoder
 data_Train['flag'] = flag_le.fit_transform(data_Train['flag'])
 
 attack_n = []
 for i in data_Train.attack:
-    # Iterate over attack types, marking 'normal' as 0 and other types as 1
+    # Iterate through the attack types and label 'normal' as 0, and other types as 1
     if i == 'normal':
         attack_n.append(0)
     else:
@@ -83,29 +83,29 @@ for i in data_Train.attack:
 data_Train['attack'] = attack_n
 data_Train['attack'].value_counts()
 
-# Split the dataset into training and testing sets
-y = data_Train['attack'].copy()  # Copy the target variable (attack type) to y
-x = data_Train.drop(['attack'], axis=1)  # Remove the target variable from the dataset, getting the feature matrix x
+# Split the dataset into training and test sets
+y = data_Train['attack'].copy()  # Copy the target variable (attack type) into y
+x = data_Train.drop(['attack'], axis=1)  # Remove the target variable from the dataset to obtain the feature matrix x
 
-# Use train_test_split to split the dataset into training and testing sets
+# Use the train_test_split function to divide the training set and the test set
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=40)
 
-# Import StandardScaler class to standardize the data
+# Import StandardScaler to standardize data
 from sklearn.preprocessing import StandardScaler
 
 # Initialize the StandardScaler object
 scalar = StandardScaler()
 
-# Standardize the training dataset x_train
+# Apply standardization to the x_train dataset
 x_train = scalar.fit_transform(x_train)
 
-# Apply the same standardization to the testing dataset x_test
+# Apply the same standardization to the x_test dataset
 x_test = scalar.fit_transform(x_test)
 
-lin_svc = svm.LinearSVC().fit(x_train, y_train)  # Train the Linear Support Vector Machine model
+lin_svc = svm.LinearSVC().fit(x_train, y_train)  # Train a linear support vector machine model
 Y_pred = lin_svc.predict(x_test)  # Use the trained model to predict the test set
-print('The Training accuracy = ', lin_svc.score(x_train, y_train))  # Print the accuracy on the training set
-print('The Testing accuracy = ', lin_svc.score(x_test, y_test))  # Print the accuracy on the test set
+print('The Training accuracy = ', lin_svc.score(x_train, y_train))  # Print the training accuracy
+print('The Testing accuracy = ', lin_svc.score(x_test, y_test))  # Print the testing accuracy
 print("------------------------------------------------")
-# Calculate and print the prediction accuracy of the LinearSVC model
+# Calculate and print the prediction accuracy of the linear SVC model
 print("linearSVC accuracy : " + str(np.round(accuracy_score(y_test, Y_pred), 3)))
