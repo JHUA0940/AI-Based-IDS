@@ -8,7 +8,6 @@ from collections import defaultdict
 from sklearn.exceptions import NotFittedError
 import socket
 from datetime import datetime
-import netifaces
 
 # Function to get the IP address of the default network interface
 def get_interface_ip():
@@ -30,7 +29,7 @@ def get_interface_ip():
 
 # Get the IP address of the network interface
 interface_ip = get_interface_ip()
-print('interface ip: '+interface_ip)
+print('interface ip: ' + interface_ip)
 if not interface_ip:
     print("Could not determine interface IP.")
     exit(1)
@@ -139,6 +138,10 @@ def process_packet(packet):
 
             if protocol_type == 'tcp' and TCP in packet:
                 dport = packet[TCP].dport
+                # Skip detection for ports greater than 30000
+                if dport > 30000:
+                    return
+
                 service = service_mapping.get(dport, "private")
                 flag = get_flag(packet)
                 # Compute wrong_fragment and urgent
@@ -146,6 +149,10 @@ def process_packet(packet):
                 urgent = 1 if packet[TCP].flags & 0x20 else 0
             elif protocol_type == 'udp' and UDP in packet:
                 dport = packet[UDP].dport
+                # Skip detection for ports greater than 30000
+                if dport > 30000:
+                    return
+
                 service = service_mapping.get(dport, "private")
                 flag = "SF"
             elif protocol_type == 'icmp' and ICMP in packet:
