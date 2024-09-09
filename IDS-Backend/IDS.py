@@ -7,10 +7,12 @@ import time
 from collections import defaultdict
 from sklearn.exceptions import NotFittedError
 import socket
+from datetime import datetime
 
 # Set the path relative to the script's directory
 path = os.path.dirname(os.path.abspath(__file__))
 
+print('load AI model')
 # Load trained models and standardization tools
 with open(os.path.join(path, 'model.pkl'), 'rb') as model_file:
     loaded_model = pickle.load(model_file)
@@ -53,10 +55,13 @@ flag_mapping = {
 
 # Initialize a counter for consecutive abnormal predictions
 abnormal_counter = 0
-ABNORMAL_THRESHOLD = 40  # Number of consecutive anomalies required for a warning
+ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
 
 # Get the local IP address
 local_ip = socket.gethostbyname(socket.gethostname())
+
+# Time tracking for normal traffic reminders
+last_normal_traffic_time = time.time()
 
 def get_flag(packet):
     if TCP in packet:
@@ -89,8 +94,9 @@ def safe_transform(label_encoder, value):
         except ValueError:
             return 0
 
+print('start detection')
 def process_packet(packet):
-    global abnormal_counter
+    global abnormal_counter, last_normal_traffic_time
 
     # Skip packets from the local IP address
     if IP in packet and packet[IP].src == local_ip:
@@ -193,7 +199,11 @@ def process_packet(packet):
                         print(f"Source IP: {src_ip}, Destination IP: {dst_ip}, Protocol: {protocol}, Service: {service}, Port: {dport}")
                         abnormal_counter = 0  # Reset counter after alert
                 else:
-                    print(f"Nnormal traffic detected!")
+                    # If normal traffic and 10 seconds have passed, print the message
+                    current_time = time.time()
+                    if current_time - last_normal_traffic_time >= 10:
+                        print(f"Normal traffic. Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                        last_normal_traffic_time = current_time
                     abnormal_counter = 0  # Reset counter if normal traffic
 
             except NotFittedError:
