@@ -17,7 +17,6 @@ service_mapping = {
     143: "imap4",
     53: "dns",
     23: "telnet",
-    # Add other services here based on the @attribute 'service' list
     20: "ftp_data",
     113: "auth",
     179: "bgp",
@@ -53,6 +52,7 @@ connection_info = defaultdict(
 # Store destination host metrics (dst_host_* fields)
 dst_host_info = defaultdict(
     lambda: {'count': 0, 'srv_count': 0, 'serror_count': 0, 'rerror_count': 0})
+
 
 # Function to process each packet and immediately print the results
 def process_packet(packet):
@@ -151,7 +151,8 @@ def process_packet(packet):
         dst_host_same_srv_rate = same_srv_rate
         dst_host_diff_srv_rate = diff_srv_rate
         dst_host_same_src_port_rate = 1.0  # Assuming the same source port for all packets
-        dst_host_serror_rate = dst_host_conn['serror_count'] / dst_host_conn['count'] if dst_host_conn['count'] > 0 else 0
+        dst_host_serror_rate = dst_host_conn['serror_count'] / dst_host_conn['count'] if dst_host_conn[
+                                                                                             'count'] > 0 else 0
         dst_host_srv_serror_rate = dst_host_conn['serror_count'] / dst_host_srv_count if dst_host_srv_count > 0 else 0
         dst_host_rerror_rate = rerror_rate
         dst_host_srv_rerror_rate = srv_rerror_rate
