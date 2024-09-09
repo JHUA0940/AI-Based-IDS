@@ -2,6 +2,12 @@
 
 ## Overview
 
+Owner:
+Jiasheng Huang
+Shiyu Zhu
+
+## Overview
+
 This project is an AI-based Intrusion Detection System (IDS) designed to detect malicious activity in network traffic. The system leverages machine learning algorithms, particularly **Support Vector Machines (SVM)**, to classify network traffic and identify potential threats or intrusions.
 
 The IDS system is trained on network traffic datasets and continuously improves its detection capabilities by learning from known attack patterns. It can be deployed in real-time environments to monitor and analyze network activities, helping to protect systems from various types of cyber attacks.
