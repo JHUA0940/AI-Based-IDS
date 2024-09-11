@@ -82,9 +82,6 @@ flag_mapping = {
 abnormal_counter = 0
 ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
 
-# Time tracking for normal traffic reminders
-last_normal_traffic_time = time.time()
-
 def get_flag(packet):
     if TCP in packet:
         flags = packet[TCP].flags
@@ -118,7 +115,7 @@ def safe_transform(label_encoder, value):
 
 print('start detection')
 def process_packet(packet):
-    global abnormal_counter, last_normal_traffic_time
+    global abnormal_counter
 
     # Skip packets from the local IP address
     if IP in packet and packet[IP].src == interface_ip:
@@ -230,10 +227,7 @@ def process_packet(packet):
                         abnormal_counter = 0  # Reset counter after alert
                 else:
                     # If normal traffic and 10 seconds have passed, print the message
-                    current_time = time.time()
-                    if current_time - last_normal_traffic_time >= 10:
-                        print(f"Normal traffic. Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-                        last_normal_traffic_time = current_time
+                    print(f"Normal traffic. Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
                     abnormal_counter = 0  # Reset counter if normal traffic
 
             except NotFittedError:
@@ -245,4 +239,4 @@ def process_packet(packet):
         print(f"Error processing packet: {e}")
 
 # Set up the packet sniffing
-sniff(prn=process_packet, store=0)
+sniff(prn=process_packet, store=0, count=0)
