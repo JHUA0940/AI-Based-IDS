@@ -13,7 +13,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import threading
 
-# Function to get the IP address of the default network interface
+# Function to get the IP address
 def get_interface_ip():
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
