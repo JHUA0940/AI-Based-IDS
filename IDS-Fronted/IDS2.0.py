@@ -2,20 +2,22 @@ import os
 import pickle
 import numpy as np
 import pandas as pd
+from flask_cors import CORS
 from scapy.all import sniff, IP, TCP, UDP, ICMP
 import time
 from collections import defaultdict
 from sklearn.exceptions import NotFittedError
 import socket
 from datetime import datetime
+import psutil
 
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import threading
-from flask_cors import CORS
+
 
 # Function to get the IP address
-def get_interface_ip():
+def get_ip_address():
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.connect(('8.8.8.8', 80))
@@ -26,12 +28,30 @@ def get_interface_ip():
         print(f"Error getting interface IP: {e}")
         return None
 
+
+# Function to find the interface associated with the IP address
+def get_interface_for_ip(ip_address):
+    for iface, addrs in psutil.net_if_addrs().items():
+        for addr in addrs:
+            if addr.family == socket.AF_INET and addr.address == ip_address:
+                return iface
+    return None
+
+
 # Get the IP address of the network interface
-interface_ip = get_interface_ip()
+interface_ip = get_ip_address()
 print('interface ip: ' + interface_ip)
 if not interface_ip:
     print("Could not determine interface IP.")
     exit(1)
+
+# Find the network interface for the IP address
+network_interface = get_interface_for_ip(interface_ip)
+if not network_interface:
+    print(f"Could not find a network interface for IP: {interface_ip}")
+    exit(1)
+
+print(f"Listening on interface: {network_interface}")
 
 # Set the path relative to the script's directory
 path = os.path.dirname(os.path.abspath(__file__))
@@ -148,10 +168,9 @@ def process_packet(packet):
 
             if protocol_type == 'tcp' and TCP in packet:
                 dport = packet[TCP].dport
-                # Skip detection for ports greater than 30000
-                if dport > 30000:
-                    return
-
+                # # Skip detection for ports greater than 30000
+                # if dport > 30000:
+                #     return
                 service = service_mapping.get(dport, "private")
                 flag = get_flag(packet)
                 # Compute wrong_fragment and urgent
@@ -225,52 +244,33 @@ def process_packet(packet):
             try:
                 # Standardize features
                 features_scaled = scalar.transform(features)
-
                 # Make prediction using the trained model
                 prediction = loaded_model.predict(features_scaled)
-
+                # Prepare the message to send to the frontend
+                src_ip = packet[IP].src if IP in packet else "unknown"
+                dst_ip = packet[IP].dst if IP in packet else "unknown"
+                protocol = protocol_type
+                timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+                message = {
+                    'src_ip': src_ip,
+                    'dst_ip': dst_ip,
+                    'protocol': protocol,
+                    'service': service,
+                    'port': dport,
+                    'timestamp': timestamp,
+                    'status': 'normal'
+                }
                 # Update abnormal counter
                 if prediction == 1:
                     abnormal_counter += 1
                     if abnormal_counter >= ABNORMAL_THRESHOLD:
-                        # Prepare the message to send to the frontend
-                        src_ip = packet[IP].src if IP in packet else "unknown"
-                        dst_ip = packet[IP].dst if IP in packet else "unknown"
-                        protocol = protocol_type
-                        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-                        message = {
-                            'src_ip': src_ip,
-                            'dst_ip': dst_ip,
-                            'protocol': protocol,
-                            'service': service,
-                            'port': dport,
-                            'timestamp': timestamp,
-                            'status': 'abnormal'
-                        }
-
                         # Emit the message to the frontend
+                        message['status'] = 'abnormal'
                         socketio.emit('traffic_update', message)
                         print(f"Sent abnormal message: {message}")
-
                         # Reset abnormal counter after emitting the message
                         abnormal_counter = 0
                 else:
-                    src_ip = packet[IP].src if IP in packet else "unknown"
-                    dst_ip = packet[IP].dst if IP in packet else "unknown"
-                    protocol = protocol_type
-                    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-                    message = {
-                        'src_ip': src_ip,
-                        'dst_ip': dst_ip,
-                        'protocol': protocol,
-                        'service': service,
-                        'port': dport,
-                        'timestamp': timestamp,
-                        'status': 'abnormal'
-                    }
-
                     # Emit the message to the frontend
                     socketio.emit('traffic_update', message)
                     print(f"Sent normal message: {message}")

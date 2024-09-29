@@ -215,19 +215,20 @@ def process_packet(packet):
                 prediction = loaded_model.predict(features_scaled)
 
                 # Check prediction and update the abnormal counter
+                # Output network flow information
+                src_ip = packet[IP].src if IP in packet else "unknown"
+                dst_ip = packet[IP].dst if IP in packet else "unknown"
+                protocol = protocol_type_mapping.get(packet[IP].proto, "unknown")
                 if prediction == 1:
                     abnormal_counter += 1
                     if abnormal_counter >= ABNORMAL_THRESHOLD:
-                        # Output network flow information
-                        src_ip = packet[IP].src if IP in packet else "unknown"
-                        dst_ip = packet[IP].dst if IP in packet else "unknown"
-                        protocol = protocol_type_mapping.get(packet[IP].proto, "unknown")
                         print(f"Abnormal traffic detected! Threshold met.")
                         print(f"Source IP: {src_ip}, Destination IP: {dst_ip}, Protocol: {protocol}, Service: {service}, Port: {dport}")
                         abnormal_counter = 0  # Reset counter after alert
                 else:
                     # If normal traffic and 10 seconds have passed, print the message
                     print(f"Normal traffic. Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                    print(f"Source IP: {src_ip}, Destination IP: {dst_ip}, Protocol: {protocol}, Service: {service}, Port: {dport}")
                     abnormal_counter = 0  # Reset counter if normal traffic
 
             except NotFittedError:
