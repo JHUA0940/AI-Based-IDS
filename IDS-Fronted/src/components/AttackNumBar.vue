@@ -10,15 +10,26 @@ export default {
   data() {
     return {
       chart: null,
-      data: []
+      data: [],
+      
     };
+  },
+  props: {
+    dataList: Array
   },
   mounted() {
     this.initializeChart();
     this.updateData();
-    setInterval(() => {
-      this.updateData();
-    }, 3000);
+  },
+  watch: {
+    dataList: {
+      handler() {
+        // 当 dataList 发生变化时，更新 items
+        this.updateData();
+      },
+      deep: true, // 如果 dataList 是一个复杂对象，建议使用深度监听
+      immediate: true // 立即执行处理函数以处理初始数据
+    }
   },
   methods: {
     initializeChart() {
@@ -34,7 +45,7 @@ export default {
         const option = {
           xAxis: {
             type: 'category',
-            data: ['192.196.13.14', '192.196.13.15', '192.196.13.16', '192.196.13.17', '192.196.13.18']
+            data: ['TCP', 'UDP', 'ICMP']
           },
           yAxis: {
             type: 'value',
@@ -68,13 +79,20 @@ export default {
     },
     updateData() {
       try {
-        // Generate random data
-        const newData = [];
-        for (let i = 0; i < 5; ++i) {
-          newData.push(Math.round(Math.random() * 200));
-        }
-        this.data = newData;
+        this.data = [0, 0, 0]; // Initialize data array to hold counts for TCP, UDP, ICMP
 
+        // Loop through newDataList and count protocol occurrences
+        this.dataList.forEach(item => {
+          if (item.protocol === 'tcp') {
+            this.data[0] += 1; // Increase TCP count
+          } else if (item.protocol === 'udp') {
+            this.data[1] += 1; // Increase UDP count
+          } else if (item.protocol === 'icmp') {
+            this.data[2] += 1; // Increase ICMP count
+          }
+        });
+
+        console.log(this.data, 'Updated data counts'); 
         if (this.chart) {
           this.chart.setOption({
             series: [

@@ -10,10 +10,10 @@
         @mouseleave="resumeScroll"
       >
         <li v-for="(item, index) in items" :key="index" class="infinite-list-item">
-          <span>vulnerability{{index}}</span>
-          <span>port: 808{{index}}</span>
-          <span>source IP:  23424{{index}}</span>
-          <span>Time: 2024.09.{{index}}</span>
+          <span>source IP:  {{item.src_ip}}</span>
+          <span>port: {{item.port}}</span>
+          <span>protocol: {{item.protocol}}</span>
+          <span>Time: {{item.timestamp}}</span>
         </li>
       </ul>
     </div>
@@ -26,16 +26,11 @@
 export default {
   name: 'ScrollList',
   props: {
-    msg: String,
+    dataList: Array
   },
   data() {
     return {
-      items: [
-        '11111111',
-        '2222222',
-        '3333333',
-        '44444444',
-      ],
+      items: [],
       loading: false,
       autoScrollInterval: null,
     };
@@ -44,16 +39,26 @@ export default {
     this.loadMore();
     this.startAutoScroll();
   },
+  watch: {
+    dataList: {
+      handler(newDataList) {
+        // 当 dataList 发生变化时，更新 items
+          this.items = [...this.items, ...newDataList]
+      },
+      deep: true, // 如果 dataList 是一个复杂对象，建议使用深度监听
+      immediate: true // 立即执行处理函数以处理初始数据
+    }
+  },
   methods: {
     loadMore() {
       if (this.loading) return;
 
       this.loading = true;
-      setTimeout(() => {
-        const newItems = [`Item ${this.items.length + 1}`];
-        this.items = [...this.items, ...newItems];
-        this.loading = false;
-      }, 500);
+      // setTimeout(() => {
+      //   const newItems = [`Item ${this.items.length + 1}`];
+      //   this.items = [...this.items, ...newItems];
+      //   this.loading = false;
+      // }, 500);
     },
     startAutoScroll() {
       this.autoScrollInterval = setInterval(() => {

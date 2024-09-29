@@ -13,18 +13,18 @@
               <el-segmented v-model="Sensitiveness" :options="options" @change="sensitiveness_change" />
             </div>
             <div class="sider-text-wrap">
-            <P>High sensitivity: false positive rate</P>
-            <p>Medium: recommended</p>
-            <p>Low sensitivity: false negative rate high</p>
+              <p>High sensitivity: false positive rate</p>
+              <p>Medium: recommended</p>
+              <p>Low sensitivity: false negative rate high</p>
             </div>
           </div>
-          <PortBar />
+          <PortBar :dataList="attackData"/>
         </el-aside>
         <el-container width="60%">
           <div class="loadding-main" ref="loadingMain" style="height: 200px;"></div>
           <el-main>
-            <Scroll msg="Welcome to Your Vue.js App" />
-            <AttackNumBar />
+            <Scroll :dataList="attackData"/>
+            <AttackNumBar  :dataList="attackData" />
           </el-main>
         </el-container>
       </el-container>
@@ -33,13 +33,14 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'; 
+import { ref, onMounted } from 'vue';
 import * as echarts from 'echarts'; // Import ECharts
 import Scroll from './components/ScrollList.vue';
 import SidebarAside from './components/SidebarAside.vue';
 import AttackNumBar from './components/AttackNumBar.vue';
 import PortBar from './components/PortBar.vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
+import io from 'socket.io-client';
 
 export default {
   name: 'App',
@@ -51,8 +52,9 @@ export default {
   },
   setup() {
     const Sensitiveness = ref('middle');
-    const previousSensitiveness = ref(Sensitiveness.value); 
+    const previousSensitiveness = ref(Sensitiveness.value);
     const loadingMain = ref(null); // Ref for the loadding-main div
+    const attackData = ref([]); // Ref for attack data
 
     const options = [
       { label: 'low', value: 'low' },
@@ -119,14 +121,14 @@ export default {
         }
       )
         .then(() => {
-          previousSensitiveness.value = newValue; 
+          previousSensitiveness.value = newValue;
           ElMessage({
             type: 'success',
             message: 'Sensitiveness updated successfully',
           });
         })
         .catch(() => {
-          Sensitiveness.value = previousSensitiveness.value; 
+          Sensitiveness.value = previousSensitiveness.value;
           ElMessage({
             type: 'info',
             message: 'Sensitiveness update canceled',
@@ -134,12 +136,25 @@ export default {
         });
     };
 
-    // Initialize ECharts on component mount
+    const dataFromAPI = ref([]); // Define dataFromAPI
+
+
+    // Initialize Socket.IO connection
+    const socket = io('http://localhost:4321'); // Replace with your Socket.IO server address
+
+    // Listen for traffic_update event
+    socket.on('traffic_update', (data) => {
+      // attackData.value = data; // Update attack data with the received data
+      attackData.value.push(data)
+      // console.log('Received traffic update:', data, attackData);
+    });
+
+    // Initialize ECharts and fetch data on component mount
     onMounted(() => {
       initECharts();
     });
 
-    return { Sensitiveness, options, sensitiveness_change, loadingMain };
+    return { Sensitiveness, options, sensitiveness_change, loadingMain, dataFromAPI, attackData };
   },
 };
 </script>
@@ -173,7 +188,6 @@ body {
 }
 .slider-demo-block .demonstration {
   font-size: 14px;
-  /* color: var(--el-text-color-secondary); */
   color:#fff;
   font-weight:bold;
   line-height: 44px;
@@ -187,8 +201,6 @@ body {
 }
 .sider-text-wrap p{
   margin:0px;
-  font-size:14px;
-  text-align:left;
   font-size:12px;
   color: var(--el-text-color-secondary);
 }
@@ -201,7 +213,7 @@ body {
 .el-segmented__item{
   width:80px;
 }
-.items-start{
+.items-start {
   /* width:60%; */
 }
 </style>
