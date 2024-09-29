@@ -52,13 +52,7 @@ export default {
   methods: {
     loadMore() {
       if (this.loading) return;
-
       this.loading = true;
-      // setTimeout(() => {
-      //   const newItems = [`Item ${this.items.length + 1}`];
-      //   this.items = [...this.items, ...newItems];
-      //   this.loading = false;
-      // }, 500);
     },
     startAutoScroll() {
       this.autoScrollInterval = setInterval(() => {
