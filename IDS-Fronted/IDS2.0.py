@@ -260,22 +260,27 @@ def process_packet(packet):
                     'timestamp': timestamp,
                     'status': 'normal'
                 }
-                # Update abnormal counter
-                if prediction == 1:
-                    abnormal_counter += 1
-                    if abnormal_counter >= ABNORMAL_THRESHOLD:
-                        # Emit the message to the frontend
-                        message['status'] = 'abnormal'
-                        socketio.emit('traffic_update', message)
-                        print(f"Sent abnormal message: {message}")
-                        # Reset abnormal counter after emitting the message
-                        abnormal_counter = 0
-                else:
+                if dport > 30000:
                     # Emit the message to the frontend
                     socketio.emit('traffic_update', message)
                     print(f"Sent normal message: {message}")
                     abnormal_counter = 0  # Reset counter if normal traffic
-
+                # Update abnormal counter
+                else:
+                    if prediction == 1:
+                        abnormal_counter += 1
+                        if abnormal_counter >= ABNORMAL_THRESHOLD:
+                            # Emit the message to the frontend
+                            message['status'] = 'abnormal'
+                            socketio.emit('traffic_update', message)
+                            print(f"Sent abnormal message: {message}")
+                            # Reset abnormal counter after emitting the message
+                            abnormal_counter = 0
+                    else:
+                        # Emit the message to the frontend
+                        socketio.emit('traffic_update', message)
+                        print(f"Sent normal message: {message}")
+                        abnormal_counter = 0  # Reset counter if normal traffic
             except NotFittedError:
                 print("Scaler or model is not properly fitted. Skipping detection.")
             except Exception as e:
