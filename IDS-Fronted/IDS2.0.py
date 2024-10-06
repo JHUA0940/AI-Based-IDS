@@ -11,7 +11,7 @@ import socket
 from datetime import datetime
 import psutil
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO, emit
 import threading
 
@@ -140,7 +140,7 @@ print('start detection')
 app = Flask(__name__, template_folder='public')
 app.config['SECRET_KEY'] = 'secret!'
 # socketio = SocketIO(app, async_mode='threading')
-CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 @socketio.on_error_default
@@ -168,9 +168,26 @@ def process_packet(packet):
 
             if protocol_type == 'tcp' and TCP in packet:
                 dport = packet[TCP].dport
-                # # Skip detection for ports greater than 30000
-                # if dport > 30000:
-                #     return
+                if dport > 30000:
+                    # If port is greater than 30000, classify as normal traffic
+                    src_ip = packet[IP].src if IP in packet else "unknown"
+                    dst_ip = packet[IP].dst if IP in packet else "unknown"
+                    protocol = protocol_type
+                    timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+                    message = {
+                        'src_ip': src_ip,
+                        'dst_ip': dst_ip,
+                        'protocol': protocol,
+                        'service': "private",
+                        'port': dport,
+                        'timestamp': timestamp,
+                        'status': 'normal'
+                    }
+                    # Emit the message to the frontend
+                    socketio.emit('traffic_update', message)
+                    print(f"Sent normal message: {message}")
+                    abnormal_counter = 0
+                    return
                 service = service_mapping.get(dport, "private")
                 flag = get_flag(packet)
                 # Compute wrong_fragment and urgent
@@ -178,10 +195,26 @@ def process_packet(packet):
                 urgent = 1 if packet[TCP].flags & 0x20 else 0
             elif protocol_type == 'udp' and UDP in packet:
                 dport = packet[UDP].dport
-                # Skip detection for ports greater than 30000
                 if dport > 30000:
+                    # If port is greater than 30000, classify as normal traffic
+                    src_ip = packet[IP].src if IP in packet else "unknown"
+                    dst_ip = packet[IP].dst if IP in packet else "unknown"
+                    protocol = protocol_type
+                    timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+                    message = {
+                        'src_ip': src_ip,
+                        'dst_ip': dst_ip,
+                        'protocol': protocol,
+                        'service': "private",
+                        'port': dport,
+                        'timestamp': timestamp,
+                        'status': 'normal'
+                    }
+                    # Emit the message to the frontend
+                    socketio.emit('traffic_update', message)
+                    print(f"Sent normal message: {message}")
+                    abnormal_counter = 0
                     return
-
                 service = service_mapping.get(dport, "private")
                 flag = "SF"
             elif protocol_type == 'icmp' and ICMP in packet:
@@ -260,27 +293,22 @@ def process_packet(packet):
                     'timestamp': timestamp,
                     'status': 'normal'
                 }
-                if dport > 30000:
+                # Update abnormal counter
+                if prediction == 1:
+                    abnormal_counter += 1
+                    if abnormal_counter >= ABNORMAL_THRESHOLD:
+                        # Emit the message to the frontend
+                        message['status'] = 'abnormal'
+                        socketio.emit('traffic_update', message)
+                        print(f"Sent abnormal message: {message}")
+                        # Reset abnormal counter after emitting the message
+                        abnormal_counter = 0
+                else:
                     # Emit the message to the frontend
                     socketio.emit('traffic_update', message)
                     print(f"Sent normal message: {message}")
                     abnormal_counter = 0  # Reset counter if normal traffic
-                # Update abnormal counter
-                else:
-                    if prediction == 1:
-                        abnormal_counter += 1
-                        if abnormal_counter >= ABNORMAL_THRESHOLD:
-                            # Emit the message to the frontend
-                            message['status'] = 'abnormal'
-                            socketio.emit('traffic_update', message)
-                            print(f"Sent abnormal message: {message}")
-                            # Reset abnormal counter after emitting the message
-                            abnormal_counter = 0
-                    else:
-                        # Emit the message to the frontend
-                        socketio.emit('traffic_update', message)
-                        print(f"Sent normal message: {message}")
-                        abnormal_counter = 0  # Reset counter if normal traffic
+
             except NotFittedError:
                 print("Scaler or model is not properly fitted. Skipping detection.")
             except Exception as e:
@@ -293,6 +321,21 @@ def process_packet(packet):
 @app.route('/')
 def index():
     return render_template('index.html')
+
+# POST endpoint to update ABNORMAL_THRESHOLD
+@app.route('/update_threshold', methods=['POST'])
+def update_threshold():
+    global ABNORMAL_THRESHOLD
+    try:
+        data = request.get_json()
+        new_threshold = int(data.get('threshold'))
+        if new_threshold > 0:
+            ABNORMAL_THRESHOLD = new_threshold
+            return jsonify({'message': f'ABNORMAL_THRESHOLD updated to {ABNORMAL_THRESHOLD}'}), 200
+        else:
+            return jsonify({'error': 'Threshold must be a positive integer'}), 400
+    except (ValueError, TypeError):
+        return jsonify({'error': 'Invalid input. Please provide a valid integer value for threshold'}), 400
 
 # Function to start sniffing packets
 def start_sniffing():
