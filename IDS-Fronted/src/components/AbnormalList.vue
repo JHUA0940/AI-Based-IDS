@@ -3,9 +3,11 @@
     <!-- Display the abnormal items -->
     <ul v-if="items.length > 0" class="infinite-list">
       <li v-for="(item, index) in items" :key="index" class="infinite-list-item">
-        <span>source IP: {{ item.src_ip }}</span>
-        <span>port: {{ item.port }}</span>
-        <span>protocol: {{ item.protocol }}</span>
+        <span>Source IP: {{ item.src_ip }}</span>
+        <span>Destination Ip: {{ item.dst_ip }}</span>
+        <span>Port: {{ item.port }}</span>
+        <span>Protocol: {{ item.protocol }}</span>
+        <span>Service: {{ item.service }}</span>
         <span>Time: {{ item.timestamp }}</span>
       </li>
     </ul>
