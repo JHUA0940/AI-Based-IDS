@@ -25,7 +25,7 @@
                     <el-icon v-if="abnormalData.length" @click="drawer = true" style="position:absolute;top:10px;left:-30px;font-size:100px;cursor:pointer;">
                         <WarningFilled style="width:40px;height:40px;color:red;" />
                     </el-icon>
-                    <el-drawer style="background:darkgray;" v-model="drawer" title="Abnormal Details" :with-header="true" direction="rtl" size="50%">
+                    <el-drawer style="background:darkgray;" v-model="drawer" title="Abnormal Details" :with-header="true" direction="rtl" size="70%">
                         <AbnormalList :dataList="abnormalData" />
                     </el-drawer>
                     <el-main>
