@@ -31,7 +31,6 @@ export default {
   watch: {
     dataList: {
       handler(newDataList) {
-        console.log('Updated dataList:', newDataList); // Log to verify data flow
         this.loadList(newDataList);
       },
       deep: true,

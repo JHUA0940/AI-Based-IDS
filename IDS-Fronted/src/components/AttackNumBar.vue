@@ -91,7 +91,6 @@ export default {
             this.data[2] += 1; // Increase ICMP count
           }
         });
-        console.log(this.data, 'Updated data counts'); 
         if (this.chart) {
           this.chart.setOption({
             series: [
