@@ -44,16 +44,16 @@ export default {
 
         const option = {
           xAxis: {
-            type: 'category',
-            data: ['TCP', 'UDP', 'ICMP']
-          },
-          yAxis: {
             type: 'value',
             max: 'dataMax',
           },
+          yAxis: {
+            type: 'category',
+            data: ['TCP', 'UDP', 'ICMP']
+          },
           series: [
             {
-              name: 'X',
+              name: 'Y',
               type: 'bar',
               data: this.data,
               label: {
@@ -91,7 +91,6 @@ export default {
             this.data[2] += 1; // Increase ICMP count
           }
         });
-
         console.log(this.data, 'Updated data counts'); 
         if (this.chart) {
           this.chart.setOption({
@@ -119,6 +118,6 @@ export default {
 <style scoped>
 .bar-container {
   width: 100%;
-  height: 400px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
 }
 </style>

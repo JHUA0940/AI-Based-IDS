@@ -42,16 +42,17 @@ export default {
 
         const option = {
           xAxis: {
-            type: 'value', // 设置为数值类型
-            max: 'dataMax',
-          },
-          yAxis: {
             type: 'category', // 设置为类别类型
             data: [], // 初始为空，稍后更新
           },
+          yAxis: {
+            type: 'value', // 设置为数值类型
+            max: 'dataMax',
+            min: 1
+          },
           series: [
             {
-              name: 'Count', // 可选：更新系列名称
+              name: 'X', // 可选：更新系列名称
               type: 'bar', // 仍然使用柱状图
               data: this.data,
               label: {
@@ -90,7 +91,7 @@ export default {
         // 将端口计数转为数组并排序
         const sortedPorts = Object.entries(portCounts)
           .sort((a, b) => b[1] - a[1]) // 按计数降序排序
-          .slice(0, 5); // 取前三个
+          .slice(0, 5); // 取前5个
 
         // 提取端口和计数
         const topPorts = sortedPorts.map(([port]) => port);
@@ -100,11 +101,11 @@ export default {
 
         // console.log('Top Ports:', topPorts); // 打印出前三个端口
         // console.log('Top Counts:', topCounts); // 打印出对应的计数
-        console.log(this.dataList,topPorts,topCounts)
+        // console.log(this.dataList,topPorts,topCounts)
 
         if (this.chart) {
           this.chart.setOption({
-            yAxis: {
+            xAxis: {
               data: topPorts // 更新 x 轴为 topPorts
             },
             series: [
@@ -131,6 +132,6 @@ export default {
 <style scoped>
 .bar-container {
   width: 100%;
-  height: 300px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
 }
 </style>

@@ -17,8 +17,6 @@
         </li>
       </ul>
     </div>
-    <div>
-    </div>
   </div>
 </template>
 
@@ -26,7 +24,11 @@
 export default {
   name: 'ScrollList',
   props: {
-    dataList: Array
+    dataList: Array,
+    paused: {
+      type: Boolean,
+      default: false // 默认值为 false
+    }
   },
   data() {
     return {
@@ -37,28 +39,46 @@ export default {
   },
   mounted() {
     this.loadMore();
-    this.startAutoScroll();
+    if (!this.paused) {
+      this.startAutoScroll();
+    }
   },
   watch: {
     dataList: {
       handler(newDataList) {
         // 当 dataList 发生变化时，更新 items
-          this.items = [...this.items, ...newDataList]
+        this.items = [...this.items, ...newDataList];
       },
-      deep: true, // 如果 dataList 是一个复杂对象，建议使用深度监听
-      immediate: true // 立即执行处理函数以处理初始数据
+      deep: true,
+      immediate: true
+    },
+    paused: {
+      handler(newVal) {
+        if (newVal) {
+          this.pauseScroll();
+        } else {
+          this.resumeScroll();
+        }
+      },
+      immediate: true
     }
   },
   methods: {
     loadMore() {
       if (this.loading) return;
       this.loading = true;
+      // 模拟数据加载，添加你的数据获取逻辑
+      setTimeout(() => {
+        this.loading = false; // 数据加载完成
+      }, 1000);
     },
     startAutoScroll() {
+      if (this.autoScrollInterval) return; // 确保只启动一个定时器
       this.autoScrollInterval = setInterval(() => {
-        const list = document.querySelector('.infinite-list');
+        const list = this.$el.querySelector('.infinite-list');
         if (list) {
           list.scrollTop += 1;
+          // 如果到达底部，重新开始滚动
           if (list.scrollTop >= list.scrollHeight - list.clientHeight) {
             list.scrollTop = 0;
           }
@@ -68,16 +88,17 @@ export default {
     pauseScroll() {
       if (this.autoScrollInterval) {
         clearInterval(this.autoScrollInterval);
+        this.autoScrollInterval = null; // 清空定时器
       }
     },
     resumeScroll() {
-      this.startAutoScroll();
+      if (!this.autoScrollInterval) {
+        this.startAutoScroll();
+      }
     }
   },
   beforeUnmount() {
-    if (this.autoScrollInterval) {
-      clearInterval(this.autoScrollInterval);
-    }
+    this.pauseScroll(); // 清理定时器
   }
 };
 </script>

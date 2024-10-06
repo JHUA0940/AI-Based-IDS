@@ -18,13 +18,19 @@
               <p>Low sensitivity: false negative rate high</p>
             </div>
           </div>
-          <PortBar :dataList="attackData"/>
+          <AttackNumBar :dataList="attackData" />
         </el-aside>
-        <el-container width="60%">
+        <el-container width="60%" style="position:relative;">
           <div class="loadding-main" ref="loadingMain" style="height: 200px;"></div>
+          <el-icon v-if="abnormalData.length" @click="drawer = true" style="position:absolute;top:10px;left:-30px;font-size:100px;cursor:pointer;">
+            <WarningFilled style="width:20px;height:20px;" />
+          </el-icon>
+          <el-drawer  style="background:darkgray;" v-model="drawer" title="Abnormal Details" :with-header="true" direction="rtl" size="50%">
+            <AbnormalList :dataList="abnormalData"/>
+          </el-drawer >
           <el-main>
-            <Scroll :dataList="attackData"/>
-            <AttackNumBar  :dataList="attackData" />
+            <Scroll :dataList="attackData" :paused="drawer"/>
+            <PortBar :dataList="attackData" />
           </el-main>
         </el-container>
       </el-container>
@@ -39,8 +45,10 @@ import Scroll from './components/ScrollList.vue';
 import SidebarAside from './components/SidebarAside.vue';
 import AttackNumBar from './components/AttackNumBar.vue';
 import PortBar from './components/PortBar.vue';
+import AbnormalList from './components/AbnormalList.vue'
 import { ElMessage, ElMessageBox } from 'element-plus';
 import io from 'socket.io-client';
+import { WarningFilled } from '@element-plus/icons-vue';
 
 export default {
   name: 'App',
@@ -49,13 +57,16 @@ export default {
     SidebarAside,
     AttackNumBar,
     PortBar,
+    WarningFilled,
+    AbnormalList
   },
   setup() {
     const Sensitiveness = ref('middle');
     const previousSensitiveness = ref(Sensitiveness.value);
     const loadingMain = ref(null); // Ref for the loadding-main div
     const attackData = ref([]); // Ref for attack data
-
+    const abnormalData = ref([])
+    const drawer = ref(false); // Drawer state
     const options = [
       { label: 'low', value: 'low' },
       { label: 'middle', value: 'middle' },
@@ -136,17 +147,16 @@ export default {
         });
     };
 
-    const dataFromAPI = ref([]); // Define dataFromAPI
-
-
     // Initialize Socket.IO connection
     const socket = io('http://localhost:4321'); // Replace with your Socket.IO server address
 
     // Listen for traffic_update event
     socket.on('traffic_update', (data) => {
-      // attackData.value = data; // Update attack data with the received data
-      attackData.value.push(data)
-      // console.log('Received traffic update:', data, attackData);
+      attackData.value.push(data); // Append data to attackData
+      // Check if the data has 'abnormal' status and push it to abnormalData array
+      if (data.status === 'abnormal') {
+        abnormalData.value.push(data);
+      }
     });
 
     // Initialize ECharts and fetch data on component mount
@@ -154,7 +164,7 @@ export default {
       initECharts();
     });
 
-    return { Sensitiveness, options, sensitiveness_change, loadingMain, dataFromAPI, attackData };
+    return { Sensitiveness, options, sensitiveness_change, loadingMain, attackData, abnormalData, drawer };
   },
 };
 </script>
@@ -194,26 +204,31 @@ body {
   white-space: nowrap;
   margin: 0px 10px 0px 0px;
 }
-.sider-text-wrap{
-  position:absolute;
-  left:17%;
-  top:40px;
+.sider-text-wrap {
+  position: absolute;
+  left: 17%;
+  top: 40px;
 }
-.sider-text-wrap p{
-  margin:0px;
-  font-size:12px;
+.sider-text-wrap p {
+  margin: 0px;
+  font-size: 12px;
   color: var(--el-text-color-secondary);
 }
-.loadding-main{
-  width:200px;
+.loadding-main {
+  width: 200px;
   position: absolute;
   right: 0px;
-  top: -48px;
+  top: -100px;
 }
-.el-segmented__item{
-  width:80px;
+.el-segmented__item {
+  width: 80px;
 }
-.items-start {
-  /* width:60%; */
+.el-drawer__title{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.el-drawer .el-drawer__close-btn:hover{
+  color:red !important;
 }
 </style>
