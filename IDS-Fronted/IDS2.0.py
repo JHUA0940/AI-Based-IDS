@@ -140,7 +140,7 @@ print('start detection')
 app = Flask(__name__, template_folder='public')
 app.config['SECRET_KEY'] = 'secret!'
 # socketio = SocketIO(app, async_mode='threading')
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 @socketio.on_error_default
@@ -260,7 +260,7 @@ def process_packet(packet):
                     'timestamp': timestamp,
                     'status': 'normal'
                 }
-                if dport > 90000:
+                if dport > 30000:
                     # Emit the message to the frontend
                     socketio.emit('traffic_update', message)
                     print(f"Sent normal message: {message}")

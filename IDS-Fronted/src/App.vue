@@ -49,7 +49,7 @@ import AbnormalList from './components/AbnormalList.vue'
 import { ElMessage, ElMessageBox } from 'element-plus';
 import io from 'socket.io-client';
 import { WarningFilled } from '@element-plus/icons-vue';
-import {postData} from './services/api.js'
+import { postData } from './services/api.js'
 export default {
     name: 'App',
     components: {
@@ -132,11 +132,11 @@ export default {
                     previousSensitiveness.value = newValue;
                     ElMessage.success('Sensitiveness updated successfully');
                     postData(newValue).then(response => {
-                      console.log('Response:', response.data);
-                    })
-                    .catch(error => {
-                      console.error('Error:', error);
-                    });
+                            console.log(postData, response.data);
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
                 })
                 .catch(() => {
                     Sensitiveness.value = previousSensitiveness.value;

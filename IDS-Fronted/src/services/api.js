@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// 创建 Axios 实例
 const api = axios.create({
-  baseURL: '/', // 后端接口的基地址
+  baseURL: 'http://localhost:4321', // Set the base URL to your Flask server
   timeout: 10000, // 请求超时设置
 });
 
