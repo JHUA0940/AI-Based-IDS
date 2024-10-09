@@ -4,13 +4,13 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:4321', // 替换为你的 Flask-SocketIO 服务器地址
-        ws: true, // 启用 WebSocket 代理
+        target: 'http://localhost:4321', // Replace with your Flask-SocketIO server address
+        ws: true, // Enable the WebSocket proxy
         changeOrigin: true
       },
       // '/': {
-      //   target: 'http://localhost:4321', // 代理到 Flask 服务器地址
-      //   changeOrigin: true, // 确保请求头中的来源被正确设置
+      //   target: 'http://localhost:4321', // Flask server address
+      //   changeOrigin: true, // Make sure the source in the request header is set correctly
       //   pathRewrite: { '^/': '' }, // Rewrite URL path to match Flask's endpoint
       // },
       '/update_threshold': { // Explicitly define this endpoint

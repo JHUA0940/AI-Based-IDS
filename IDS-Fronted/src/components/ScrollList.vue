@@ -27,7 +27,7 @@ export default {
     dataList: Array,
     paused: {
       type: Boolean,
-      default: false // 默认值为 false
+      default: false 
     }
   },
   data() {
@@ -46,7 +46,7 @@ export default {
   watch: {
     dataList: {
       handler(newDataList) {
-        // 当 dataList 发生变化时，更新 items
+        // Update items when the dataList changes
         this.items = [...this.items, ...newDataList];
       },
       deep: true,
@@ -67,18 +67,18 @@ export default {
     loadMore() {
       if (this.loading) return;
       this.loading = true;
-      // 模拟数据加载，添加你的数据获取逻辑
+      // Simulate data loading and add your data acquisition logic
       setTimeout(() => {
-        this.loading = false; // 数据加载完成
+        this.loading = false; // Data loading complete
       }, 1000);
     },
     startAutoScroll() {
-      if (this.autoScrollInterval) return; // 确保只启动一个定时器
+      if (this.autoScrollInterval) return; // Make sure to start only one timer
       this.autoScrollInterval = setInterval(() => {
         const list = this.$el.querySelector('.infinite-list');
         if (list) {
           list.scrollTop += 1;
-          // 如果到达底部，重新开始滚动
+          // If reach the bottom, start rolling again
           if (list.scrollTop >= list.scrollHeight - list.clientHeight) {
             list.scrollTop = 0;
           }
@@ -88,7 +88,7 @@ export default {
     pauseScroll() {
       if (this.autoScrollInterval) {
         clearInterval(this.autoScrollInterval);
-        this.autoScrollInterval = null; // 清空定时器
+        this.autoScrollInterval = null; // clearInterval
       }
     },
     resumeScroll() {
@@ -98,7 +98,7 @@ export default {
     }
   },
   beforeUnmount() {
-    this.pauseScroll(); // 清理定时器
+    this.pauseScroll(); // Clearing timer
   }
 };
 </script>

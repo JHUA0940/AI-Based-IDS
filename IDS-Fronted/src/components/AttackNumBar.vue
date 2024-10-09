@@ -11,7 +11,6 @@ export default {
     return {
       chart: null,
       data: [],
-      
     };
   },
   props: {
@@ -24,11 +23,11 @@ export default {
   watch: {
     dataList: {
       handler() {
-        // 当 dataList 发生变化时，更新 items
+        // When dataList changes, update items
         this.updateData();
       },
-      deep: true, // 如果 dataList 是一个复杂对象，建议使用深度监听
-      immediate: true // 立即执行处理函数以处理初始数据
+      deep: true, // Use deep watch if dataList is a complex object
+      immediate: true // Execute the handler immediately to process initial data
     }
   },
   methods: {

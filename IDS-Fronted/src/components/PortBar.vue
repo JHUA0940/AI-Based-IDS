@@ -42,22 +42,22 @@ export default {
 
         const option = {
           xAxis: {
-            type: 'category', // 设置为类别类型
-            data: [], // 初始为空，稍后更新
+            type: 'category', // Set as category type
+            data: [], // Initially empty, will update later
           },
           yAxis: {
-            type: 'value', // 设置为数值类型
+            type: 'value', // Set as value type
             max: 'dataMax',
             min: 1
           },
           series: [
             {
-              name: 'X', // 可选：更新系列名称
-              type: 'bar', // 仍然使用柱状图
+              name: 'X', // Optional: update series name
+              type: 'bar', // Still using bar chart
               data: this.data,
               label: {
                 show: true,
-                position: 'top', // 标签显示在柱子顶部
+                position: 'top', // Labels displayed at the top of the bar
                 valueAnimation: true
               }
             }
@@ -78,40 +78,40 @@ export default {
     },
     updateData() {
       try {
-        // 统计端口出现次数
+        // Count occurrences of ports
         const portCounts = {};
 
         this.dataList.forEach(item => {
-          const port = item.port; // 假设每个 item 中有一个 port 属性
+          const port = item.port; // Assume each item has a port property
           if (port) {
-            portCounts[port] = (portCounts[port] || 0) + 1; // 增加端口计数
+            portCounts[port] = (portCounts[port] || 0) + 1; // Increment port count
           }
         });
 
-        // 将端口计数转为数组并排序
+        // Convert port counts to an array and sort
         const sortedPorts = Object.entries(portCounts)
-          .sort((a, b) => b[1] - a[1]) // 按计数降序排序
-          .slice(0, 5); // 取前5个
+          .sort((a, b) => b[1] - a[1]) // Sort by count in descending order
+          .slice(0, 5); // Take the top 5
 
-        // 提取端口和计数
+        // Extract ports and counts
         const topPorts = sortedPorts.map(([port]) => port);
         const topCounts = sortedPorts.map(([, count]) => count);
 
-        this.data = topCounts; // 更新数据为前三个端口的计数
+        this.data = topCounts; // Update data with counts of the top ports
 
-        // console.log('Top Ports:', topPorts); // 打印出前三个端口
-        // console.log('Top Counts:', topCounts); // 打印出对应的计数
+        // console.log('Top Ports:', topPorts); // Print the top ports
+        // console.log('Top Counts:', topCounts); // Print the corresponding counts
         // console.log(this.dataList,topPorts,topCounts)
 
         if (this.chart) {
           this.chart.setOption({
             xAxis: {
-              data: topPorts // 更新 x 轴为 topPorts
+              data: topPorts // Update x-axis with topPorts
             },
             series: [
               {
                 type: 'bar',
-                data: topCounts // 更新系列数据
+                data: topCounts // Update series data
               }
             ]
           });
