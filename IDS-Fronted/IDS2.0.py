@@ -102,6 +102,7 @@ flag_mapping = {
 # Initialize a counter for consecutive abnormal predictions
 abnormal_counter = 0
 ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
+PORT_RANGE = 30000
 
 def get_flag(packet):
     if TCP in packet:
@@ -168,7 +169,7 @@ def process_packet(packet):
 
             if protocol_type == 'tcp' and TCP in packet:
                 dport = packet[TCP].dport
-                if dport > 90000:
+                if dport > PORT_RANGE:
                     # If port is greater than 30000, classify as normal traffic
                     src_ip = packet[IP].src if IP in packet else "unknown"
                     dst_ip = packet[IP].dst if IP in packet else "unknown"
@@ -195,7 +196,7 @@ def process_packet(packet):
                 urgent = 1 if packet[TCP].flags & 0x20 else 0
             elif protocol_type == 'udp' and UDP in packet:
                 dport = packet[UDP].dport
-                if dport > 90000:
+                if dport > PORT_RANGE:
                     # If port is greater than 30000, classify as normal traffic
                     src_ip = packet[IP].src if IP in packet else "unknown"
                     dst_ip = packet[IP].dst if IP in packet else "unknown"
