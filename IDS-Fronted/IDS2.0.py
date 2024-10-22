@@ -1,6 +1,5 @@
 import os
 import pickle
-import numpy as np
 import pandas as pd
 from flask_cors import CORS
 from scapy.all import sniff, IP, TCP, UDP, ICMP
@@ -12,7 +11,7 @@ from datetime import datetime
 import psutil
 
 from flask import Flask, render_template, request, jsonify
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO
 import threading
 
 
