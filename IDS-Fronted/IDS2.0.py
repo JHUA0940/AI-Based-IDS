@@ -100,10 +100,10 @@ flag_mapping = {
 
 # Initialize a counter for consecutive abnormal predictions
 abnormal_counter = 0
-ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
+ABNORMAL_THRESHOLD = 100  # Number of consecutive anomalies required for a warning
 NORMAL_MESSAGE_LIMIT = 20
 normal_message_counter = 0
-PORT_RANGE = 30000
+PORT_RANGE = 51000
 
 def get_flag(packet):
     if TCP in packet:
@@ -191,8 +191,8 @@ def process_packet(packet):
                             'status': 'normal'
                         }
                         # Emit the message to the frontend
-                        socketio.emit('traffic_update', message)
-                        print(f"Sent normal message: {message}")
+                        # socketio.emit('traffic_update', message)
+                        # print(f"Sent normal message: {message}")
                         normal_message_counter = 0
                         return
                 service = service_mapping.get(dport, "private")
@@ -222,8 +222,8 @@ def process_packet(packet):
                             'status': 'normal'
                         }
                         # Emit the message to the frontend
-                        socketio.emit('traffic_update', message)
-                        print(f"Sent normal message: {message}")
+                        # socketio.emit('traffic_update', message)
+                        # print(f"Sent normal message: {message}")
                         abnormal_counter = 0
                         return
                 service = service_mapping.get(dport, "private")
@@ -306,6 +306,8 @@ def process_packet(packet):
                 }
                 # Update abnormal counter
                 if prediction == 1:
+                    if dport > PORT_RANGE or dport==49546:
+                        return
                     abnormal_counter += 1
                     if abnormal_counter >= ABNORMAL_THRESHOLD:
                         # Emit the message to the frontend
