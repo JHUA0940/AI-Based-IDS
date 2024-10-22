@@ -1,8 +1,9 @@
-Flask
-Flask-SocketIO
-numpy
-pandas
-scapy
-scikit-learn
-CORS
-flask_cors
+Flask==2.3.2
+flask_cors==3.0.10
+Flask-SocketIO==5.3.4
+eventlet==0.33.0
+numpy==1.23.5
+pandas==1.5.3
+scapy==2.4.5
+scikit-learn==1.2.2
+psutil==5.9.5
