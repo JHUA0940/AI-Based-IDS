@@ -1,9 +1,9 @@
-Flask==2.3.2
+Flask==3.0.3
 flask_cors==3.0.10
-Flask-SocketIO==5.3.4
+Flask-SocketIO==5.3.7
 eventlet==0.33.0
 numpy==2.1.1
 pandas==2.2.2
 scapy==2.4.5
-scikit-learn==1.2.2
-psutil==5.9.5
+scikit-learn==1.5.1
+psutil==6.0.0
