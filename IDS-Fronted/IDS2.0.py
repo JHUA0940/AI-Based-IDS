@@ -14,7 +14,6 @@ from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO
 import threading
 
-
 # Function to get the IP address
 def get_ip_address():
     try:
@@ -27,7 +26,6 @@ def get_ip_address():
         print(f"Error getting interface IP: {e}")
         return None
 
-
 # Function to find the interface associated with the IP address
 def get_interface_for_ip(ip_address):
     for iface, addrs in psutil.net_if_addrs().items():
@@ -35,7 +33,6 @@ def get_interface_for_ip(ip_address):
             if addr.family == socket.AF_INET and addr.address == ip_address:
                 return iface
     return None
-
 
 # Get the IP address of the network interface
 interface_ip = get_ip_address()
@@ -103,6 +100,9 @@ abnormal_counter = 0
 ABNORMAL_THRESHOLD = 50  # Number of consecutive anomalies required for a warning
 PORT_RANGE = 30000
 
+normal_message_counter = 0
+NORMAL_MESSAGE_LIMIT = 10  # Limit for normal message outputs
+
 def get_flag(packet):
     if TCP in packet:
         flags = packet[TCP].flags
@@ -139,7 +139,6 @@ print('start detection')
 # Initialize Flask app and SocketIO
 app = Flask(__name__, template_folder='public')
 app.config['SECRET_KEY'] = 'secret!'
-# socketio = SocketIO(app, async_mode='threading')
 CORS(app, resources={r"/*": {"origins": "*"}})
 socketio = SocketIO(app, cors_allowed_origins="*")
 
@@ -148,7 +147,7 @@ def default_error_handler(e):
     print(f"An error has occurred: {str(e)}")
 
 def process_packet(packet):
-    global abnormal_counter
+    global abnormal_counter, normal_message_counter
 
     # Skip packets from the local IP address
     if IP in packet and packet[IP].src == interface_ip:
@@ -169,23 +168,6 @@ def process_packet(packet):
             if protocol_type == 'tcp' and TCP in packet:
                 dport = packet[TCP].dport
                 if dport > PORT_RANGE:
-                    # If port is greater than 30000, classify as normal traffic
-                    src_ip = packet[IP].src if IP in packet else "unknown"
-                    dst_ip = packet[IP].dst if IP in packet else "unknown"
-                    protocol = protocol_type
-                    timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-                    message = {
-                        'src_ip': src_ip,
-                        'dst_ip': dst_ip,
-                        'protocol': protocol,
-                        'service': "private",
-                        'port': dport,
-                        'timestamp': timestamp,
-                        'status': 'normal'
-                    }
-                    # Emit the message to the frontend
-                    socketio.emit('traffic_update', message)
-                    print(f"Sent normal message: {message}")
                     abnormal_counter = 0
                     return
                 service = service_mapping.get(dport, "private")
@@ -196,23 +178,6 @@ def process_packet(packet):
             elif protocol_type == 'udp' and UDP in packet:
                 dport = packet[UDP].dport
                 if dport > PORT_RANGE:
-                    # If port is greater than 30000, classify as normal traffic
-                    src_ip = packet[IP].src if IP in packet else "unknown"
-                    dst_ip = packet[IP].dst if IP in packet else "unknown"
-                    protocol = protocol_type
-                    timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-                    message = {
-                        'src_ip': src_ip,
-                        'dst_ip': dst_ip,
-                        'protocol': protocol,
-                        'service': "private",
-                        'port': dport,
-                        'timestamp': timestamp,
-                        'status': 'normal'
-                    }
-                    # Emit the message to the frontend
-                    socketio.emit('traffic_update', message)
-                    print(f"Sent normal message: {message}")
                     abnormal_counter = 0
                     return
                 service = service_mapping.get(dport, "private")
@@ -244,29 +209,6 @@ def process_packet(packet):
             default_feature_values[6] = wrong_fragment  # wrong_fragment
             default_feature_values[7] = urgent  # urgent
 
-            # Update connection and destination host statistics
-            connection_key = (packet[IP].src, packet[IP].dst, dport)
-            conn = connection_info[connection_key]
-            conn['count'] += 1
-            conn['srv_count'] += 1 if service == "private" else 0
-
-            dst_host = packet[IP].dst
-            dst_host_conn = dst_host_info[dst_host]
-            dst_host_conn['count'] += 1
-            dst_host_conn['srv_count'] += 1 if service == "private" else 0
-
-            # Calculate statistics
-            srv_diff_host_rate = conn['diff_srv_count'] / conn['count'] if conn['count'] > 0 else 0
-            dst_host_srv_diff_host_rate = srv_diff_host_rate
-            dst_host_srv_serror_rate = dst_host_conn['serror_count'] / dst_host_conn['srv_count'] if dst_host_conn[
-                                                                                                         'srv_count'] > 0 else 0
-
-            # Fill statistics into the feature vector
-            default_feature_values[8:14] = [
-                conn['count'], conn['srv_count'], srv_diff_host_rate, dst_host_conn['count'],
-                dst_host_srv_diff_host_rate, dst_host_srv_serror_rate
-            ]
-
             # Ensure all 14 features are accounted for
             features = pd.DataFrame([default_feature_values], columns=[
                 'duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes',
@@ -280,34 +222,22 @@ def process_packet(packet):
                 # Make prediction using the trained model
                 prediction = loaded_model.predict(features_scaled)
                 # Prepare the message to send to the frontend
-                src_ip = packet[IP].src if IP in packet else "unknown"
-                dst_ip = packet[IP].dst if IP in packet else "unknown"
-                protocol = protocol_type
-                timestamp = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-                message = {
-                    'src_ip': src_ip,
-                    'dst_ip': dst_ip,
-                    'protocol': protocol,
-                    'service': service,
-                    'port': dport,
-                    'timestamp': timestamp,
-                    'status': 'normal'
-                }
-                # Update abnormal counter
                 if prediction == 1:
                     abnormal_counter += 1
                     if abnormal_counter >= ABNORMAL_THRESHOLD:
-                        # Emit the message to the frontend
-                        message['status'] = 'abnormal'
-                        socketio.emit('traffic_update', message)
-                        print(f"Sent abnormal message: {message}")
+                        # Emit the abnormal message to the frontend
+                        socketio.emit('traffic_update', {'status': 'abnormal'})
+                        print("Abnormal traffic detected.")
                         # Reset abnormal counter after emitting the message
                         abnormal_counter = 0
                 else:
-                    # Emit the message to the frontend
-                    socketio.emit('traffic_update', message)
-                    print(f"Sent normal message: {message}")
                     abnormal_counter = 0  # Reset counter if normal traffic
+                    normal_message_counter += 1
+                    if normal_message_counter >= NORMAL_MESSAGE_LIMIT:
+                        # Emit normal message to the frontend after reaching the limit
+                        socketio.emit('traffic_update', {'status': 'normal'})
+                        print("Normal traffic detected.")
+                        normal_message_counter = 0
 
             except NotFittedError:
                 print("Scaler or model is not properly fitted. Skipping detection.")

@@ -22,6 +22,7 @@ sudo npm install -g @vue/cli
 Create a virtual environment for Python and install the dependencies from `requirements.txt`:
 
 ```bash
+sudo apt install python3-dev
 sudo apt install python3-venv
 python3 -m venv venv
 source venv/bin/activate
@@ -41,6 +42,7 @@ python3 IDS2.0.py
 In a new terminal window, start the Vue.js frontend development server:
 
 ```bash
+npm install
 npm run serve
 ```
 
